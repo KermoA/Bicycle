@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/960_12_col.css" />
+    <title>Product Review: All baskets were not created equal</title>
+    <link rel="icon" type="image/x-icon" href="images/pf.png">
+    <style>
+        @font-face {
+            font-family: 'QuicksandBook';
+            src: url('fonts/Quicksand_Book-webfont.eot'),
+                url('fonts/Quicksand_Book-webfont.woff') format('woff'),
+                url('fonts/Quicksand_Book-webfont.ttf') format('truetype'),
+                url('fonts/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            color: #ffffff;
+            background: #413f3b url("images/bg.jpg");
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 90%;
+            margin: 0px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        a {
+            color: #b5c1ad;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ffffff;
+        }
+        .header {
+            background-image: url("images/bg-header.jpg");
+            padding: 0px;
+            height: 100px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            z-index: 50;
+        }
+        .nav {
+            float: right;
+            font-family: QuicksandBook, Arial, Helvetica, sans-serif;
+            padding: 45px 0px 0px 0px;
+            text-align: right;
+        }
+        .wrapper {
+            width: 960px;
+            margin: 0px auto;
+            background-image: url("images/bg-triangle.png");
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            text-align: left;
+        }
+        .logo{
+            margin-top: 43px;
+            margin-left: 22px;
+        }
+        h1, h2 {
+				font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+				font-weight: normal;
+				text-transform: uppercase;}
+			h1 {
+				font-size: 240%;
+				margin-top: 140px;}
+			.date {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 75%;
+				color: #b5c1ad;}
+			.intro {
+				clear: left;
+				font-size: 90%;
+				line-height: 1.4em;}
+			.main-story {
+				background-image: url("images/triangles.png");
+				background-repeat: no-repeat;
+				background-position: 122px 142px;
+				height: 570px;}
+			.more-articles {
+				border-top: 1px solid #ffffff;
+				padding: 10px;}
+			.more-articles p {
+				border-bottom: 1px solid #807c72;
+				padding: 5px 0px 15px 0px;
+				font-size: 80%;}
+			.more-articles p:last-child {
+				border-bottom: none;}
+			.footer {
+                margin-top: auto;
+				clear: both;
+				background: rgba(0, 0, 0, 0.2);
+				padding: 5px 10px;}
+			.footer p {
+				font-family: Helvetica, Arial, sans-serif;
+				font-size: 75%;
+				text-align: right;}
+			.footer a {
+				color: #807c72;}
+        h3 {
+            font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+			font-weight: normal;
+            text-align: left;
+            font-size: 20px;
+        }
+        h4 {
+            font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+			font-weight: normal;
+            text-align: left;
+        }
+        p {
+            font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+			font-weight: normal;
+            text-align: justify;
+            font-size: 17px;
+        }
+        .spacefromtop {
+            margin-top: 95px;
+        }
+        .introduction {
+            border: 2px solid #000000;
+            padding: 5px 5px 5px 5px;
+        }
+        .sticky-news {
+            position: fixed;
+            top: 35%;
+            right: 50px;
+            transform: translateY(-50%);
+            width: 400px;
+            height: 300px;
+            overflow-y: auto;
+        }
+        .sticky-news ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sticky-news li {
+            margin-bottom: 1px;
+        }
+        .sticky-news a {
+            font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+            display: block;
+            padding: 5px;
+            background-image: url(images/bg-header.jpg);
+            border: 1px solid #cccccc;
+            text-decoration: none;
+            text-align: left;
+            color: #ffffff;
+        }
+        .sticky-news a:hover {
+            background-image: url(images/bg.jpg);
+        }
+        .show {
+            display: block;
+        }
+        #back-on-top {
+            position: fixed;
+            bottom: 10px;
+            float: right;
+            right: 5.5%;
+            left: 92.25%;
+            max-width: 50px;
+            width: 100%;
+            font-size: 12px;
+            font-family: QuicksandBook, Helvetica, Arial, sans-serif;
+            border-color: rgba(85, 85, 85, 0.2);
+            background-image: url(images/bg-header.jpg);
+            padding: .5px;
+            border-radius: 4px;
+        }
+        #back-on-top:hover {
+            background-image: url(images/bg.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container_12">
+            <div class="grid_2">
+                <a href="index.html"><img src="images/logo.png" alt="Pedal Faster - The modern bicycle magazine" width="216" height="37" class="logo" /></a>
+            </div>
+            <div class="nav grid_7">
+                <a href="index.html">home</a> / <a href="news.html">news</a> / <a href="archives.html">archives</a> / <a href="about.html">about</a> / <a href="contact.html">contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="sticky-news">
+        <ul>
+          <li><a href="onTheRoad.html">On The Road: From the fixed gear fanatic's point of view</a></li>
+          <li><a href="brandHistory.html">Brand History: Pashley Cycles - hand-built in England</a></li>
+          <li><a href="frameWars.html">Frame Wars: Innovations in cycle manufacture and repair</a></li>
+          <li><a href="touringDiary.html">Touring Diary: A sketchbook in your basket</a></li>
+          <li><a href="topTen.html">Top Ten Newcomers for 2023: A peek at what's to come</a></li>
+          <li><a href="innerTube.html">InnerTube: The best cycling videos on the web</a></li>
+          <li><a href="goingPublic.html">Going Public: Out & about width the founder of Public</a></li>
+          <li><a href="cycleLane.html">Cycle Lane Defence: Know your rights</a></li>
+          <li><a href="hallOfFame.html">Bicyle Hall of Fame: The 1958 Schwinn Spitfire</a></li>
+          <li><a href="readerSurvey.html">Reader Survey: Share your thoughts with us!</a></li>
+          <li><a href="chainGang.html">Chain Gang: The evolution of the humble bike chain</a></li>
+          <li><a href="fixedGear.html">Fixed gear forever</a></li>
+        </ul>
+      </div>
+        <div class="container_12">
+            <div class="grid_9">
+                    <h1>Product Review: All baskets were not created equal</h1></p>
+                    <div class="more-articles"></div>
+                    <div class="grid_6">
+                        <img src="images/more3.jpg" alt="The road ahead" width="460" height="326"/>
+                    </div>
+                    <div>
+                        <p>
+                            In the world of cycling accessories, few items are as quintessential as the humble bicycle basket.
+                            Whether for practical commuting or leisurely rides, a good basket can make all the difference in
+                            carrying essentials or adding a touch of charm to your bike. However, not all baskets are created
+                            equal, as I discovered during my quest for the perfect one.
+                        </p>
+                        <p>
+                            My search led me to test several baskets, each boasting its own unique features and design elements.
+                            From traditional wicker to modern metal constructions, I explored a range of options to find the ideal
+                            blend of style, functionality, and durability.
+                        </p>
+                        <p>
+                            First up was the classic wicker basket, a timeless choice favored for its rustic charm and lightweight
+                            construction. While aesthetically pleasing, I found that wicker baskets lacked the sturdiness needed
+                            to withstand heavy loads or inclement weather. Additionally, their open weave design posed a risk of
+                            small items slipping through the cracks, making them less than ideal for carrying smaller belongings securely.
+                        </p>
+                        <p>
+                            Next, I turned to metal wire baskets, touted for their durability and practicality. With their sturdy
+                            construction and ample storage space, metal wire baskets proved to be a reliable choice for everyday
+                            cycling needs. However, their utilitarian appearance left something to be desired in terms of style,
+                            lacking the visual appeal of their wicker counterparts.
+                        </p>
+                        <p>
+                            Finally, I came across a modern twist on the classic bicycle basket: the canvas tote. Combining the
+                            functionality of a traditional basket with the convenience of a removable bag, the canvas tote offered
+                            the best of both worlds. Its durable canvas construction provided ample protection for belongings, while
+                            its detachable design made it easy to transport items off the bike. Plus, with a variety of colors and
+                            patterns to choose from, the canvas tote added a touch of personality to my bike without sacrificing practicality.
+                        </p>
+                        <p>
+                            In conclusion, my journey through the world of bicycle baskets revealed that all baskets were indeed not
+                            created equal. While each type had its own strengths and weaknesses, it was the canvas tote that ultimately
+                            won me over with its winning combination of style, functionality, and versatility. Whether for a quick trip
+                            to the market or a leisurely ride through the park, the canvas tote proved to be the perfect companion for
+                            all my cycling adventures.
+                        </p>
+                    </div>
+            </div>
+        </div>
+    <div class="footer clearfix">
+        <div class="container_12">
+            <p class="grid_12"><a href="legalInformation.html">Legal Information</a> | <a href="privacyPolicy.html">Privacy Policy</a> | Copyright &copy; Pedal Faster 2023</p>
+        </div>
+    </div>
+    <button id="back-on-top"><a href="#top" style="color: white">Back to Top</a></button>
+</body>
+</html>
